@@ -1,0 +1,463 @@
+@font-face {
+    font-family: Montserrat-BlackItalic;
+    src: 
+        url(../fonts/Montserrat/Montserrat-BlackItalic.ttf) format('truetype')
+        ;
+}
+@font-face {
+    font-family: Montserrat;
+    src: 
+        url(../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype')
+        ;
+}
+@font-face {
+    font-family: FiraSans;
+    src: url(../fonts/Fira\ Sans/FiraSans-Regular.ttf) format('truetype');
+}
+body, html{
+    background-color: rgb(32, 32, 32);
+    font-family: "Montserrat";
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+/**********************************************/
+/*Dio na vrhu za društvene mreže*/
+.container-fluid{
+    background-color: rgb(254, 198, 39); 
+}
+.links{
+    margin-left: 75%;
+}
+.links a{
+    margin-right: 3%;
+}
+/**********************************************/
+/*Navbar*/
+nav.navbar{
+    background-color: rgb(32, 32, 32);
+}
+nav.navbar a{
+    color: rgb(254, 198, 39);
+    
+}
+nav.navbar a:hover{
+    color:white;
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 198, 39);
+}
+nav.navbar #loginbtn:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 198, 39);
+}
+#navl{
+    margin-right: 0vw;
+    font-size: 0.9vw;
+}
+#navl li a{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navbar-brand{
+    margin-left: 0vw;
+}
+/**********************************************/
+/*Forma za login*/
+#loginModal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(185, 185, 185, 0.9);
+}
+#loginbtn{
+    background-color: rgb(32, 32, 32);
+    color: rgb(254, 198, 39);
+    border: none;
+}
+#login{
+    display: none;
+    position: relative;
+    border-radius: 10px;
+    padding-top: 2%;
+    text-align: center;
+    color: white;
+    width: 25vw;
+    background-color: rgb(32, 32, 32);
+    position: fixed;
+    top: 13vh;
+    left: 37.5vw;
+    z-index: 100;   
+}
+#x1{
+    position: absolute;
+    background-color: rgb(254, 198, 39);
+    right: -4%;
+    top:-4%;
+    width: 9%;
+    border-radius: 50%;
+    background-clip: border-box;
+    padding: 2%;
+}
+#login h4{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: bolder;
+}
+#login input{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+#login input:focus{
+    box-shadow: none;
+    border: 1px solid rgb(20,20,20);
+}
+#login button{
+    width:50%;
+    color: black;
+    font-size: 1vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    border: none;
+}
+#login button:hover{
+    background-color: rgb(254, 198, 39);
+}
+#login button:active{
+    border: none;
+    box-shadow: none;
+}
+/**********************************************/
+/*Dio ispod navbar-a*/
+#zakaziSas{
+    height: 80vh;
+    background-image: url("../images/fotka1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#zakaziSas .row .col-5{
+    top: 15vh;
+}
+#zakaziSas h1{
+    font-family: "Montserrat-BlackItalic";
+    font-weight: bold;
+    font-size: 3vw;
+}
+#zakaziSas p{
+    font-family: "FiraSans";
+    font-size: 1vw;
+    width: 30vw;
+    text-align: left;
+}
+button.btn{
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    background-color: rgb(254, 198, 39);
+    border-radius: 10px;
+    box-shadow: 0px 2px rgb(32, 32, 32);
+    font-size: 2vw;
+}
+
+/**********************************************/
+/*FORMA ZA ZAKAZIVANJE SASTANAKA*/
+#zakaziModal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(185, 185, 185, 0.9);
+}
+#zakazi{
+    display: none;
+    position: relative;
+    border-radius: 10px;
+    padding-top: 2%;
+    text-align: center;
+    color: white;
+    width: 30vw;
+    background-color: rgb(32, 32, 32);
+    position: fixed;
+    top: 13vh;
+    left: 35vw;
+    z-index: 100;
+}
+#x{
+    position: absolute;
+    background-color: rgb(254, 198, 39);
+    right: -4%;
+    top:-4%;
+    width: 9%;
+    border-radius: 50%;
+    background-clip: border-box;
+    padding: 2%;
+}
+#zakazi h4{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: bolder;
+}
+#zakazi input{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+#zakazi input:focus{
+    box-shadow: none;
+}
+#zakazi button{
+    color: black;
+    font-size: 1vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    border: none;
+}
+#zakazi button{
+    border:1px solid rgb(20,20,20);
+}
+#zakazi button:hover{
+    background-color: rgb(254, 198, 39);
+}
+#zakazi .form-row{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#zakazi .form-row input{
+    margin: auto;
+    width: 90%;
+}
+/**********************************************/
+/*Pr and Communication dio*/
+#pr{
+    height:max-content;
+    padding-bottom: 5%;
+    margin-top: 10vh;
+}
+#pr h1{
+    margin-top: 5vh;
+    font-family: "Montserrat-BlackItalic";
+    font-size: 3vw;
+    font-weight: bold; 
+}
+#pr p{
+    font-family: "FiraSans";
+    font-size: 0.8vw;
+    width: 30vw;
+    text-align:left; 
+}
+#pr #slikad{
+    width:40vw;
+    margin-top: -3.3vh;
+}
+#slika{
+    margin-left: -3vw;
+}
+#pr #slikal{
+    width: 38vw;
+    margin-top: -5vh;
+}
+/**********************************************/
+/*Clients*/
+#clients{
+    height:max-content;
+    background: linear-gradient(to bottom, black, transparent),
+    linear-gradient(to top, black, transparent),
+     url(../images/fotka4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+table{
+    margin: auto;
+    width: 50vw;
+    border-collapse: separate;
+    margin-bottom: 1%;
+}
+table td{
+    padding: 1vw;
+    position: relative;
+}
+table tbody tr td img{
+    width:17vw;
+    position: relative;
+}
+#overlay{
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0,0,0,0.9))  !important;
+    bottom:6%;
+    left: 5%;
+    padding: 34%;
+    padding-right:56%;
+}
+#strelica{
+    position: absolute;
+    background-color: rgb(34, 34, 34);
+    border-radius: 50%;
+    width: 5vw;
+    padding: 11%;
+    bottom: 30%;
+    left: 35%;
+}
+.client-text{
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    bottom:0%;
+    left: 6%;
+    z-index: 100;
+}
+#clientPagination{
+    display: block;
+    text-align: center;
+}
+#clientPagination li{
+    display: inline;
+    padding: 0px;
+    margin-right: 1%;
+    border: 1px solid rgb(254, 198, 39);
+    border-radius: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#clientPagination li:hover{
+    background-color: rgb(254, 198, 39);
+}
+#clientPagination li a{
+    color: rgb(20,20,20,0);
+}
+#clientPagination li a:hover{
+    text-decoration: none;
+    color: rgb(254, 198, 39);
+}
+/**********************************************/
+/*Go All In*/
+#gai{
+    background-color: black;
+    box-shadow: 0px 20px 20px black;
+}
+#GoAllIn{
+    text-align: center;
+    color: white;
+    font-size: 1.1vw;
+    height: max-content;
+    background:linear-gradient(to bottom, black, transparent),
+    linear-gradient(to top, black, transparent), 
+    url(../images/fotka5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.goallin{
+   
+    width: 20vw;
+}
+#red .col{
+    background-color: black;
+    opacity: 0.7;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
+    margin:2vw;
+}
+#red p{
+    font-size: 0.8vw;
+}
+/**********************************************/
+/*OFFICES */
+#offices{
+    height: max-content;
+    color: white;
+    background: linear-gradient(to bottom,black,rgb(20,20,20));
+}
+#offices a{
+    display:inline; 
+    color:rgb(254, 198, 39);
+    margin: 1vw;
+    font-size: 2vw;
+    font-weight: bold;
+}
+#offices a:hover{
+    color: white;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 198, 39);
+}
+#offices a:active{
+    background-color: rgb(20,20,20);
+}
+#offices tabel{
+    width: 80vw;
+    border: none; 
+} 
+#offices table tr{
+    padding: 15%;
+}
+
+#offices ul{
+    border-bottom: none;
+}
+.off{
+    position: relative;
+}
+.text-img {
+    font-family: "Montserrat";
+    font-weight: bolder;
+    position: absolute;
+    bottom: 3%;
+    color: rgb(254, 198, 39);
+    font-size: 100%;
+}
+/**********************************************/
+/*Kontakt na dnu stranice*/
+#kontakt{
+    margin-bottom: 15vh;
+    height: max-content;
+    padding-top: 4vh;
+    text-align: center;
+}
+#kontakt p{
+    font-size: 1vw;
+    text-align: center;
+    margin-right: 35%;
+}
+#kontakt h4{
+    font-weight: bolder;
+    margin-right: 35%;
+}
+/**********************************************/
+/*Footer*/
+#footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0.2vw; 
+    padding-right: 0.4vw;
+}
+
+#footer #prvi{
+    background-color: rgb(64, 64, 64);
+}
+#footer #drugi{
+    padding: 3vh 1vw 3vh 1vw;
+    background-color: rgb(32, 32, 32);
+    color: rgb(254, 198, 39);
+}
+/*************************MAP**************************/
+#gmap_canvas img{
+    max-width: none;
+    background: none; 
+}
+#mapa{
+    margin: -35px 0px -35px 50%;
+    top:-10px;
+}
